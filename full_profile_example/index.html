@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Full-profile conjoint analysis example</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/jquery.dataTables.min.css">
+	<style>
+		.row {
+			padding-bottom: 50px;
+		} 
+
+		#content {
+			padding-top: 50px;
+		}
+	</style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+	<div class="container">
+	  <a class="navbar-brand" href="#">Conjoint analysis</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+		  <li class="nav-item">
+			<a class="nav-link" href="#about">About</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#ranking">Ranking of profiles</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#regression">Regression</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#more">More</a>
+		  </li>
+		</ul>
+	  </div>
+	</div>
+  </nav>
+
+  <!-- Page Content -->
+  <div id="content" class="container">
+	<div id="about" class="row">
+	  <div class="col-lg-12 text-center">
+		<h1 class="mt-5">Full-profile conjoint analysis example</h1>
+		<p class="lead">For reference, read article: [AFTER PUBLICATION INSERT MEDIUM LINK HERE]</p>
+		<p>In this type of conjoint analysis, product descriptions are fully detailed.
+			Respondents assess every combination of possible attributes.
+			
+			Profiles are presented for acceptability or preference evaluations.
+			</p>
+	  </div>
+	</div>
+	<div id="ranking" class="row">
+		<div class="col-lg-12 text-center">
+			<h2 class="mt-5">Ranking of profiles</h2>
+			<p>Please arrange the following profiles according to your purchasing intentions</p>
+	  		<div class="table-responsive">
+
+			<table id="profiles" class="table table-striped">
+				<thead>
+				<tr>
+					<th>Profile</th>
+					<th>Memory</th>
+					<th>Screen size</th>
+					<th>5G</th>
+					<th>Price</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>A</td>
+					<td>32 GB</td>
+					<td>5''</td>
+					<td>YES</td>
+					<td>€1,199</td>
+				</tr>
+				<tr>
+					<td>B</td>
+					<td>64 GB</td>
+					<td>5''</td>
+					<td>NO</td>
+					<td>€999</td>
+				</tr>
+				<tr>
+					<td>C</td>
+					<td>32 GB</td>
+					<td>5''</td>
+					<td>NO</td>
+					<td>€999</td>
+				</tr>
+				<tr>
+					<td>D</td>
+					<td>64 GB</td>
+					<td>5''</td>
+					<td>YES</td>
+					<td>€999</td>
+				</tr>
+				<tr>
+					<td>E</td>
+					<td>64 GB</td>
+					<td>6''</td>
+					<td>YES</td>
+					<td>€999</td>
+				</tr>
+				<tr>
+					<td>F</td>
+					<td>64 GB</td>
+					<td>6''</td>
+					<td>YES</td>
+					<td>€1,199</td>
+				</tr>
+				<tr>
+					<td>G</td>
+					<td>32 GB</td>
+					<td>5''</td>
+					<td>NO</td>
+					<td>€1,199</td>
+				</tr>
+				<tr>
+					<td>H</td>
+					<td>64 GB</td>
+					<td>5''</td>
+					<td>NO</td>
+					<td>€1,199</td>
+				</tr>
+				<tr>
+					<td>I</td>
+					<td>32 GB</td>
+					<td>6''</td>
+					<td>NO</td>
+					<td>€1,199</td>
+				</tr>
+				<tr>
+					<td>J</td>
+					<td>32 GB</td>
+					<td>5''</td>
+					<td>YES</td>
+					<td>€999</td>
+				</tr>
+				<tr>
+					<td>K</td>
+					<td>32 GB</td>
+					<td>6''</td>
+					<td>YES</td>
+					<td>€999</td>
+				</tr>
+				<tr>
+					<td>L</td>
+					<td>64 GB</td>
+					<td>5''</td>
+					<td>YES</td>
+					<td>€1,199</td>
+				</tr>
+				<tr>
+					<td>M</td>
+					<td>32 GB</td>
+					<td>6''</td>
+					<td>NO</td>
+					<td>€999</td>
+				</tr>
+				<tr>
+					<td>N</td>
+					<td>64 GB</td>
+					<td>6''</td>
+					<td>NO</td>
+					<td>€1,199</td>
+				</tr>
+				<tr>
+					<td>O</td>
+					<td>64 GB</td>
+					<td>6''</td>
+					<td>NO</td>
+					<td>€999</td>
+				</tr>
+				<tr>
+					<td>P</td>
+					<td>32 GB</td>
+					<td>6''</td>
+					<td>YES</td>
+					<td>€1,199</td>
+				</tr>
+				</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div id="regression" class="row">
+		<div class="col-lg-12 text-center">
+
+			<h2>Regression</h2>
+			<p></p>
+			<div class="table-responsive">
+				<table id="example" class="table table-stripped display" width="100%"></table>
+			</div>
+		</div>	
+	</div>
+	<div id="more" class="row">
+		<div class="col-lg-12 text-center">
+
+			<h2>Contact</h2>
+			<p><a href="mailto:rafalrybnik@yahoo.com">rafalrybnik@yahoo.com</a></p>
+
+		</div>	
+	</div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery/jquery-ui/jquery-ui.js"></script>
+  <script src="vendor/jquery/jquery.ui.touch-punch.min.js"></script>
+  <!-- <script src="vendor/jquery/flot/source/jquery.flot.js"></script> -->
+  <script src="vendor/jstat/dist/jstat.min.js"></script>
+  <script src="vendor/jquery.dataTables.min.js"></script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
+
