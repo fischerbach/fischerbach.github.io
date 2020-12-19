@@ -51,7 +51,9 @@
 	<script>
 Survey.StylesManager.applyTheme("modern");
 
-var surveyJSON = {"pages":[{"name":"page1","elements":[{"type":"rating","name":"rate","title":"On a scale of zero to five, how likely are you to recommend my article to a friend or colleague? *","minRateDescription":"(Most unlikely)","maxRateDescription":"(Most likely)"}]}]};
+var surveyJSON = {"pages":[{"name":"page1","elements":[{"type":"rating","name":"rate","title":"On a scale of zero to five, how likely are you to recommend our website to a friend or colleague? *","minRateDescription":"(Most unlikely)","maxRateDescription":"(Most likely)"},{"type":"checkbox","name":"question1","title":" What websites do you visit daily?","choices":[{"value":"item3","text":"website"}],"choicesByUrl":{"url":"https://script.google.com/macros/s/AKfycby_XZaWjAb7DMbtXdOsEsPiwS3lM4NkLPhi5f3D1fdhCatn5sOQ0r2v/exec","path":"question1","valueName":"value","titleName":"title"},"hasNone":true}]}]};
+
+
 
 function sendDataToServer(survey, options) {
 	options.showDataSaving();
