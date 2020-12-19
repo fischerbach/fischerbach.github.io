@@ -28,7 +28,7 @@
   
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog" role="document">
+	<div class="modal-dialog modal-lg" role="document">
 	  <div class="modal-content">
 		<div class="modal-header">
 		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -51,7 +51,7 @@
 	<script>
 Survey.StylesManager.applyTheme("modern");
 
-var surveyJSON = {"pages":[{"name":"page1","elements":[{"type":"rating","name":"rate","title":"On a scale of zero to five, how likely are you to recommend my article to a friend or colleague? *","minRateDescription":"(Most unlikely)","maxRateDescription":"(Most likely)"}]}]};
+var surveyJSON = {"pages":[{"name":"page1","elements":[{"type":"rating","name":"rate","title":"On a scale of one to five, how likely are you to recommend my article to a friend or colleague? *","minRateDescription":"(Most unlikely)","maxRateDescription":"(Most likely)"}]}]};
 
 function sendDataToServer(survey, options) {
 	options.showDataSaving();
